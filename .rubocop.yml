@@ -1,0 +1,29 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+  Exclude:
+    - db/schema.rb
+    - bin/*
+    - vendor/bundle/**/*
+    - node_modules/**/*
+    - config/initializers/content_security_policy.rb
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 99
+
+Style/MixinUsage:
+  Exclude:
+    - bin/*
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*_spec.rb
+    - spec/rails_helper.rb
+
+RSpec/NestedGroups:
+  Max: 5
