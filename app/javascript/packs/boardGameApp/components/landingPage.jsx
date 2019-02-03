@@ -6,7 +6,7 @@ class LandingPage extends React.Component {
         return(
             <div>
                 <h1>Hello World</h1>
-                <Link to="/test">test</Link>
+                <Link to="/test">test</Link><br/>
                 <a href="/login">go to login</a>
             </div>
         )
