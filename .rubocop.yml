@@ -8,13 +8,14 @@ AllCops:
     - bin/*
     - vendor/bundle/**/*
     - node_modules/**/*
-    - config/initializers/content_security_policy.rb
+    - config/initializers/*
 
 Style/Documentation:
   Enabled: false
 
 Metrics/LineLength:
-  Max: 99
+  Max: 105
+  IgnoredPatterns: ['\A#']
 
 Style/MixinUsage:
   Exclude:
